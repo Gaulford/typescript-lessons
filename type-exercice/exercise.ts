@@ -1,8 +1,10 @@
-let bankAccount: {
+type BankAccount = {
     money: number
     , deposit: ( all:number )=> void
-} = {
-    money: = 2000,
+};
+
+let bankAccount: BankAccount = {
+    money: 2000,
     deposit( value:number ):void {
         this.money += value;
     }
@@ -10,6 +12,7 @@ let bankAccount: {
 
 let myself: {
     name: string
+    , bankAccount: BankAccount
     , hobbies: string[]
 } = {
     name: "Max",
